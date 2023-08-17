@@ -1,0 +1,837 @@
+/* CSS */
+/* PHONE VERSION */
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: "Audiowide", sans-serif;
+}
+/* Computer nav turn off */
+.topnav {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* NAVBAR-PHONE */
+.navbar {
+  position: relative;
+  top: 0;
+  width: 100vw;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active-nav {
+  background-color: #0099ff;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* HOME */
+.home3 { /* Image dont show in phone version */
+  display: none;
+}
+.home-flex {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f242d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 30px;
+    transform: translate(0, -8vh);
+    color: #0099ff;
+}
+
+.link-color {
+  color: #0099ff;
+}
+
+.home2 {
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.home2-web-text {
+    transform: translate(0, -1vh);
+    color: #0099ff;
+    font-weight: 600;
+}
+
+.gif {
+  width: 30vw;
+  transform: translate(0, 20vh);
+}
+
+p span.typed-text {
+  font-weight: normal;
+  color: #0099ff;
+}
+p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+/* Front page button */
+.learn-more {
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    background-color: #0099ff;
+    transform: translate(0, -10vh);
+}
+
+.learn-more:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 1.5s infinite;
+   }
+   
+   @keyframes pulse {
+    0% {
+     box-shadow: 0 0 0 0 #0099ff;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+/* -------------------------------------------------------------------------------------------------------------- */
+/* ABOUT ME */
+.flex-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about {
+  padding: 40px;
+  margin-left: 20px;
+}
+
+.image-me {
+  width: 30vh;
+  border: 2px solid #0099ff;
+  margin-top: 3vh;
+}
+
+li {
+  font-size: 15px;
+  color: #0099ff;
+}
+
+.download-buttons {
+  margin-top: 2vh;
+  width: 80vw;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 10px;
+  border: 2px solid #1f242d;
+  background-color: #0099ff;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* SKILLS */
+.skills-flex {
+  height: 100vh;
+  background-color: #1f242d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
+}
+.skills {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 5vh;
+}
+
+.other-skills {
+  text-align: center;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: whitesmoke;
+  color: #1f242d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100vw;
+  border: 3px solid #0099ff;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 2vh;
+  font-weight: 700;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-skill {
+  background-color: #0099ff;
+  color: whitesmoke;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: whitesmoke;
+  color: #1f242d;
+  margin-top: -2vh;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Skillbar */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 80vw;
+  height: 40vh;
+  padding: 30px 30px 50px;
+  border-radius: 10px;
+} 
+.container *{
+  font-family: “Poppins”,sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.skill-text{
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.details{
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+  border: 2px solid #0099ff;
+  border-radius: 20px;
+
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #0099ff;
+}
+
+.skills:not(:last-child){
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* KEYFRAMES FRONT-END */
+#html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+      width: 70%;
+  }
+}
+
+#css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+      width: 70%;
+  }
+}
+
+#js-bar{
+  animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+  100%{
+      width: 50%;
+  }
+}
+
+#jQuery-bar{
+  animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+  100%{
+      width: 25%;
+  }
+} 
+/* ------------------------------------------------------------------------------------------- */
+/* KEYFRAMES BACK-END */
+#php-bar{
+  animation: php-fill 2s forwards;
+}
+@keyframes php-fill{
+  100%{
+      width: 10%;
+  }
+}
+
+#mysql-bar{
+  animation: mysql-fill 2s forwards;
+}
+@keyframes mysql-fill{
+  100%{
+      width: 20%;
+  }
+}
+/* ------------------------------------------------------------------------------------------- */
+/* KEYFRAMES LANGUAGES */
+#finnish-bar{
+  animation: finnish-fill 2s forwards;
+}
+@keyframes finnish-fill{
+  100%{
+      width: 100%;
+  }
+}
+
+#english-bar{
+  animation: english-fill 2s forwards;
+}
+@keyframes english-fill{
+  100%{
+      width: 70%;
+  }
+}
+
+#swedish-bar{
+  animation: swedish-fill 2s forwards;
+}
+@keyframes swedish-fill{
+  100%{
+      width: 30%;
+  }
+}
+/* ------------------------------------------------------------------------------------------- */
+/* KEYFRAMES OTHER */
+#photoshop-bar{
+  animation: photoshop-fill 2s forwards;
+}
+@keyframes photoshop-fill{
+  100%{
+      width: 50%;
+  }
+}
+
+#xd-bar{
+  animation: xd-fill 2s forwards;
+}
+@keyframes xd-fill{
+  100%{
+      width: 60%;
+  }
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* EDUCATION */
+/* Timeline Container */
+.timeline {
+  height: 140vh;
+  background: var(--primary-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.education-text {
+  text-align: center;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #1f242d;
+}
+
+/* Card container */
+.card {
+  position: static;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #1f242d;
+  color: gray;
+  border-radius: 8px;
+  width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+/* Title of the card */
+.title {
+  color: #0099ff;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid #0099ff;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* PROJECTS */
+.center2 {
+  display: grid;
+  place-items: center;
+}
+.galleria {
+  height: 100vh;
+  background-color: #1f242d;
+}
+/* Kuvagalleria container */
+.slideshow-container {
+max-width: 600px;
+position: static;
+margin: auto;
+color: whitesmoke;
+}
+
+/* Piilottaa kuvat vakiona */
+.mySlides {
+display: none;
+}
+
+/*Galleriakuvat*/
+.galleria-kuvat {
+  width: 100vw;
+  margin-left: 2vw;
+border: 2px solid #0099ff;
+}
+/* Seuraava napin position */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #0099ff;
+}
+
+/* Numero teksti (1/3 etc) */
+.numbertext {
+  color: #0099ff;
+  font-size: 12px;
+  padding: 8px 12px;
+  margin-top: 20px;
+  top: 0;
+}
+
+/* Pallot jotka kertoo missä kuvassa olet */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2196F3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Fading animaatio */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* CONTACT */
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+hr.rounded { /*Yhteystiedot jakoviivat*/
+	border-top: 3px solid black;
+	border-radius: 5px;
+    width: 70vw;
+}
+
+.contact {
+margin-top: 10vh;
+}
+
+/* Form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #0099ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #008ae6;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #1f242d;
+  padding: 20px;
+  height: auto;
+  margin-top: 8vh;
+}
+
+.form-label {
+  color: whitesmoke;
+}
+
+/* Socials */
+.social {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+
+.socials {
+  font-size: 35px;
+  color: #0099ff;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+.footer {
+  height: 15vh;
+  background-color: #1f242d;
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Turn off phone nav */
+  .navbar {
+    display: none;
+  }
+/* -------------------------------------------------------------------------------------------------------------- */
+/* NAVIGATION COMPUTER */
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: #1f242d;
+    display: block;
+    font-family: "Audiowide", sans-serif;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 5vh;
+  }
+  
+  .topnav a:hover {
+    background-color: #0099ff;
+    color: whitesmoke;
+  }
+  
+  .topnav a.active-nav-computer {
+    background-color: #1f242d;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 700;
+  }
+
+  .topnav a.active-nav-computer:hover {
+    background-color: #0099ff;
+  }
+  
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  
+  .topnav-right {
+    float: right;
+    margin-right: 10vw;
+  }
+
+  .topnav-left {
+    margin-left: 10vw;
+  }
+/* -------------------------------------------------------------------------------------------------------------- */
+/* HOME-COMPUTER */
+.home3 {
+  display: block;
+}
+
+.home-image {
+  width: 30vw;
+  transform: translate(0vw, -10vh);
+}
+
+.home1 {
+  transform: translate(0vw, -10vh);
+  font-size: 30px;
+}
+
+.home2 {
+  transform: translate(-10vw, -10vh);
+}
+
+.learn-more {
+  transform: translate(0, -5vh);
+}
+
+.gif {
+  width: 5vw;
+  transform: translate(-17vw, 25vh);
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* ABOUT ME-COMPUTER */
+.flex-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.image {
+  width: 30vw;
+}
+
+.image-me {
+  width: 30vw;
+}
+
+.about-text {
+  width: 30vw;
+  font-size: 20px;
+}
+
+.about {
+  width: 30vw;
+}
+
+li {
+  font-size: 20px;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* SKILLS-COMPUTER */
+.skills-flex {
+  height: 100vh;
+  flex-direction: row;
+}
+.collapsible {
+  width: 40vw;
+}
+
+.content {
+width: 30vw;
+height: 30vh;
+}
+
+.skills {
+  margin-top: 1vh;
+}
+
+.skills-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-skills2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Skillbar */
+.container {
+  width: 30vw;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* EDUCATION-COMPUTER */
+.timeline {
+  display: grid;
+  place-items: center;
+  transform: translate(0, -15vh);
+}
+
+.card {
+  width: 60vw;
+}
+
+.education-text {
+  transform: translate(0, 10vh);
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* PROJECTS-COMPUTER */
+.slideshow-container {
+  max-width: 60vw;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* CONTACT-COMPUTER */
+.flex-contact {
+  flex-direction: row;
+}
+
+.contact {
+  width: 50vw;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-text {
+  margin-top: 8vh;
+}
+
+hr.rounded { /*Yhteystiedot jakoviivat*/
+    width: 20vw;
+}
+
+.container-form {
+  width: 50vw;
+}
+
+}

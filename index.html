@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR-COMPUTER -->
+    <!-- Top navigation -->
+    <div class="topnav">
+
+  <!-- Centered link -->
+    <div class="topnav-centered">
+      <a href="#home" class="active-nav-computer">Portfolio.</a>
+    </div>
+  
+  <!-- Left-aligned links (default) -->
+    <div class="topnav-left">
+    <a href="#home">Home</a>
+    <a href="#about">About me</a>
+    <a href="#skills">Skills</a>
+    </div>
+  
+  <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  
+</div>
+
+    <!-- HOMEPAGE -->
+    <div class="home-flex" id="home">
+        <div class="home3">
+          <img src="https://geronimo.okol.org/~suhart/Portfolio/Images/Coding.png" class="home-image" alt="Image-home">
+        </div>
+        <div class="home1">
+            <a class="link-color" href="https://www.linkedin.com/in/arttu-suhonen/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a class="link-color" href="https://www.facebook.com/arttu.suhonen.96" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a class="link-color" href="https://steamcommunity.com/id/Gh0stMaj0r/" target="_blank"><i class="bi bi-steam"></i></a>
+        </div>
+        <div class="home2">
+            <p>Hello, It's me</p>
+            <h2>Arttu Suhonen</h2>
+                <p>and I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            <p>Currently studying web developing <br>in OSAO Kaukovainio</p>
+            <button onclick="explore()" class="learn-more">Explore</button>
+            <img src="https://geronimo.okol.org/~suhart/Portfolio/GIF/scroll-down.gif" class="gif" alt="Scroll-gif">
+        </div>
+    </div>
+
+    <!-- NAVBAR-PHONE -->
+        <div class="navbar">
+          <a href="#home" class="active-nav"><i class="bi bi-house"></i></a>
+          <a href="#about"><i class="bi bi-file-person"></i></a>
+          <a href="#skills"><i class="bi bi-card-list"></i></a>
+          <a href="#education"><i class="bi bi-book"></i></a>
+          <a href="#projects"><i class="bi bi-code-square"></i></a>
+          <a href="#contact"><i class="bi bi-envelope-at"></i></a>
+      </div>
+    <!-- ABOUT ME -->
+    <div class="flex" id="about">
+        <h2>About me</h2>
+        <div class="flex-about">
+        <div class="image" data-aos="fade-right" data-aos-duration="2000">
+            <img src="https://geronimo.okol.org/~suhart/Portfolio/Images/kuva1.png" class="image-me" alt="My-Image">
+        </div>
+        <div class="about" data-aos="fade-left" data-aos-duration="2000">
+            <p class="about-text">I am 20 years old young student from Oulu. 
+                I study Web Developing in OSAO Kaukovainio. 
+                I have always liked Computers and coding is inspired me a lot. 
+                I am very friendly person and I came along with everyone. 
+                Challenges aren't a problem, I deal them best of my skill.</p>
+                <li>20 years old</li>
+                <li>Student</li>
+                <li>Oulu, North Ostrobothnia</li>
+                <li>Passionate coder</li>
+            <div class="download-buttons">
+                <a class="btn" href="https://drive.google.com/file/d/1H6sOXM8stKpqi29mDLZrjYNIiFg6Yx8G/view?usp=sharing" target="_blank"><i class="bi bi-download"></i> Download CV🇫🇮</a>
+                <a class="btn" href="https://drive.google.com/file/d/1xz9GfoxAUKf4HRcMyfQH5VE4ZA0ZY_2g/view?usp=sharing" target="_blank"><i class="bi bi-download"></i> Download CV🇬🇧</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skills-flex" id="skills">
+        <div class="skills" data-aos="zoom-in" data-aos-duration="2000">
+            <h2>Coding Skills</h2>
+            <div class="skills-center">
+            <button type="button" class="collapsible"><i class="bi bi-code-square"></i> Front-end skills</button>
+            <div class="content">
+              <div class="wrapper">
+                <div class="container">
+                    <div class="skills">
+                        <div class="details">
+                           <span>HTML</span>
+                           <span>70%</span>
+                        </div>
+                        <div class="bar">
+                          <div id="html-bar"></div>
+                        </div>
+                      </div>
+                      <div class="skills">
+                        <div class="details">
+                          <span>CSS</span>
+                          <span>70%</span>
+                         </div>
+                         <div class="bar">
+                           <div id="css-bar"></div>
+                         </div>
+                       </div>
+                       <div class="skills">
+                        <div class="details">
+                          <span>Javascript</span>
+                          <span>50%</span>
+                        </div>
+                         <div class="bar">
+                         <div id="js-bar"></div>
+                        </div>
+                       </div>
+                       <div class="skills">
+                        <div class="details">
+                          <span>jQuery</span>
+                          <span>25%</span>
+                        </div>
+                        <div class="bar">
+                         <div id="jQuery-bar"></div>
+                         </div>
+                       </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+            <div class="skills2" data-aos="zoom-in" data-aos-duration="2000">
+            <button type="button" class="collapsible"><i class="bi bi-hdd-rack"></i> Back-end skills</button>
+            <div class="content">
+              <div class="wrapper">
+                <div class="container">
+                    <div class="skills">
+                        <div class="details">
+                           <span>PHP</span>
+                           <span>10%</span>
+                        </div>
+                        <div class="bar">
+                          <div id="php-bar"></div>
+                        </div>
+                      </div>
+                      <div class="skills">
+                        <div class="details">
+                          <span>MySQL</span>
+                          <span>20%</span>
+                         </div>
+                         <div class="bar">
+                           <div id="mysql-bar"></div>
+                         </div>
+                       </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+        <div class="other-skills" data-aos="zoom-in" data-aos-duration="2000">
+            <h2>Other Skills</h2>
+          <div class="skills-center">
+        <button type="button" class="collapsible"><i class="bi bi-chat-square-text"></i> Language skills</button>
+        <div class="content">
+          <div class="wrapper">
+            <div class="container">
+                <div class="skills">
+                    <div class="details">
+                       <span>Finnish, mother tongue</span>
+                       <span>100%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="finnish-bar"></div>
+                    </div>
+                  </div>
+                  <div class="skills">
+                    <div class="details">
+                      <span>English</span>
+                      <span>70%</span>
+                     </div>
+                     <div class="bar">
+                       <div id="english-bar"></div>
+                     </div>
+                   </div>
+                   <div class="skills">
+                    <div class="details">
+                      <span>Swedish</span>
+                      <span>30%</span>
+                    </div>
+                     <div class="bar">
+                     <div id="swedish-bar"></div>
+                    </div>
+                   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+        <div class="other-skills2" data-aos="zoom-in" data-aos-duration="2000">
+        <button type="button" class="collapsible"><i class="bi bi-collection"></i> Other skills</button>
+        <div class="content">
+          <div class="wrapper">
+            <div class="container">
+                <div class="skills">
+                    <div class="details">
+                       <span>Adobe Photoshop</span>
+                       <span>50%</span>
+                    </div>
+                    <div class="bar">
+                      <div id="photoshop-bar"></div>
+                    </div>
+                  </div>
+                  <div class="skills">
+                    <div class="details">
+                      <span>Adobe XD</span>
+                      <span>60%</span>
+                     </div>
+                     <div class="bar">
+                       <div id="xd-bar"></div>
+                     </div>
+                   </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+<!-- ----------------------------------------------------------------------------------------------------------- -->
+<!-- EDUCATION -->
+    <!-- Timeline -->
+    <div class="timeline" id="education">
+        <h2 class="education-text">Education</h2>
+        <div class="outer">
+          <div class="card" data-aos="fade-left" data-aos-duration="2000">
+            <div class="info">
+              <h3 class="title">Primary School <br><br> 2007-2018</h3>
+              <p>I studied 2007-2018 at Haukiputaan elementary school 
+                and graduated in 2018 decent grades</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-left" data-aos-duration="2000">
+            <div class="info">
+              <h3 class="title">High School <br><br> 2018-2021</h3>
+              <p>I continued my studies in high school, which lasted 3 years, 
+                and I graduated in 2021 to secondary school graduate</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-left" data-aos-duration="2000">
+            <div class="info">
+              <h3 class="title">OAMK, University of applied sciences <br><br> 2021-2022</h3>
+              <p>When I graduated from high school, I went to study at a university of applied sciences, 
+                but I stopped studying due to difficulties and lack of motivation in 2022</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-left" data-aos-duration="2000">
+            <div class="info">
+              <h3 class="title">OSAO, Information and communication technologies <br><br> Present 2022-></h3>
+              <p>My current place of study is a vocational school, where I study to become a software developer and which I started in the fall of 2022. 
+                I decided to change fields because computers and coding have always interested me. 
+                The field feels like my own place and the first year is almost over</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- PROJECTS -->
+    	<!--Image gallery-->
+	<div class="galleria center2" id="projects">
+		<!-- Image gallery container -->
+		<div class="slideshow-container" data-aos="zoom-in-down" data-aos-duration="2000">
+			<h2 style="text-align: center;">Projects</h2>
+			<p style="text-align: center;">*Here you can see couple of my projects*</p>
+      <p style="text-align: center;">*Images changes automatically within 6 seconds*</p>
+	<!-- Images and numbers-->
+		<div class="mySlides fade">
+	  	<div class="numbertext">1 / 5</div>
+	 	    <a href="https://geronimo.okol.org/~suhart/Projektity%c3%b6%202023/" target="_blank"><img src="Images/Projects/Projektityö.JPG" style="width:95%" class="galleria-kuvat"></a>
+      <p style="text-align: center;">My biggest project so far, I had to design and execute
+      company website (HTML + CSS, Javascript, jQuery)</p>
+		</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 5</div>
+	  <img src="Images/Projects/Ilmolomake.JPG" style="width:95%" class="galleria-kuvat">
+    <p style="text-align: center;">Registration form (HTML + CSS)</p>
+	</div>
+  
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 5</div>
+	  <img src="Images/Projects/Laskukone.JPG" style="width:95%" class="galleria-kuvat">
+    <p style="text-align: center;">Calculator (HTML + Javascript)</p>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="numbertext">4 / 5</div>
+		<img src="Images/Projects/Pitsatilaus.JPG" style="width:95%" class="galleria-kuvat">
+    <p style="text-align: center;">Pizzaorder form (HTML + CSS)</p>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 5</div>
+		<img src="Images/Projects/XD-työ.JPG" style="width:95%" class="galleria-kuvat">
+    <p style="text-align: center;">Adobe XD website prototype (Adobe XD)</p>
+	  </div>
+    <p style="text-align: center; font-family: 'Audiowide', sans-serif;">-<span style="color: #0099ff">CLICK</span> IMAGES TO SEE MORE-</p>
+    </div>
+</div>
+
+    <!-- CONTACT -->
+    <div class="flex-contact" id="contact">
+      <div class="contact" data-aos="zoom-in-right" data-aos-duration="2000">
+        <h2 style="text-align: center;">Contact me!</h2>
+        <p class="contact-text">📍 | Jokelantie 616</p>
+        <hr class="rounded">   
+        <p >📧 | suhonen.arttu2002@gmail.com</p>
+        <hr class="rounded">
+        <p>📞 | 040-0856880</p>
+      </div>
+    <!-- Contact form -->
+    <div class="container-form" data-aos="zoom-in-left" data-aos-duration="2000">
+      <h2 style="text-align: center; color: whitesmoke;">Contact form</h2>
+      <form action="/action_page.php">
+        <label class="form-label" for="fname">Firstname</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your firstname..*">
+    
+        <label class="form-label" for="lname">Lastname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your lastname..*">
+    
+        <label class="form-label" for="country">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..*">
+    
+        <label class="form-label" for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write message.."></textarea>
+    
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    </div>
+    <!-- Social medias -->
+      <div class="social" data-aos="zoom-in-down" data-aos-duration="2000">
+        <h2>Also check my socials</h2>
+        <div class="social-icons">
+          <a class="socials" href="https://www.linkedin.com/in/arttu-suhonen/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a class="socials" href="https://www.facebook.com/arttu.suhonen.96" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a class="socials" href="https://steamcommunity.com/id/Gh0stMaj0r/" target="_blank"><i class="bi bi-steam"></i></a>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <p>Copyright© 2023 by Arttu Suhonen</p>
+        <p>All rights reserved</p>
+      </div>
+</body>
+<script src="Javascript/textanimation.js"></script>
+<script src="Javascript/navbarscroll.js"></script>
+<script src="Javascript/skills.js"></script>
+<script src="Javascript/projects-gallery.js"></script>
+<script src="Javascript/otherbuttons.js"></script>
+<script src="Javascript/imagelinks.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
